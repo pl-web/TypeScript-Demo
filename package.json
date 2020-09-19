@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/pl-web/TypeScript-Demo/issues"
   },
-  "homepage": "https://github.com/pl-web/TypeScript-Demo#readme"
+  "homepage": "https://github.com/pl-web/TypeScript-Demo#readme",
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
