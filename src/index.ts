@@ -1,0 +1,1 @@
+import './typescript/basic-type.ts'
