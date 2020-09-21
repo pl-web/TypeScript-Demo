@@ -45,3 +45,18 @@ const foo = (params: string): void => {
   console.log("params: ", params)
 }
 foo('it is a string')
+// object 对象
+let obj: object
+obj = {
+  name: 'LL',
+  age: 23
+}
+console.log(obj)
+// 类型断言 -- 可以去进行类型的转换
+const getLength = (target: number | string): number => {
+  if((<string>target).length || (<string>target).length === 0) {
+    return (target as string).length
+  } else {
+    return target.toString().length
+  }
+}
