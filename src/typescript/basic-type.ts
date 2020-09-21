@@ -34,3 +34,14 @@ console.log(animal.Mouse) // 2
 console.log(animal[0]) // Dog
 console.log(animal[1]) // Cat
 console.log(animal[2]) // Mouse
+// any 类型
+let any_: any
+any_ = 'str-01' // any_ = 123
+let arr_any: any[]
+arr_any = ['1', 2]
+// void 类型
+// 当函数没有返回值时，我们可以去指明该函数的返回值为void
+const foo = (params: string): void => {
+  console.log("params: ", params)
+}
+foo('it is a string')
