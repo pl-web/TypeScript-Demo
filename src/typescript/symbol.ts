@@ -10,3 +10,24 @@ console.log("symbol data type: ", sy_2)
 const sy_season = Symbol('season')
 const sy_onean = Symbol('onean')
 // console.log(sy_season === sy_onean) // false
+// -----------------
+// Symbol
+let prop_1 = 'name'
+let prop_2 = 'age'
+const my_info = {
+  [prop_1]: 'LL',
+  [prop_2]: 21
+}
+console.log(my_info)
+// -----------------
+const prop_sy_1 = 'name'
+const prop_sy_2 = 'age'
+const my_info_sy = {
+  [prop_sy_1]: 'PP',
+  [prop_sy_2]: 20
+}
+console.log(my_info_sy)
+// 遍历属性名
+for(let key in my_info) {
+  console.log("my_info")
+}
