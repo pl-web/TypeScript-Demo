@@ -40,3 +40,29 @@ console.log(Object.getOwnPropertySymbols(my_info_sy))
 // Symbol
 let arr_1: Array<any> = [1, 2]
 // console.log([].concat(arr_1, [1,2]))
+
+// Symbol description
+let _pp_ = Symbol('learning');
+// console.log(_pp_.description);
+
+// 对象
+let user_001 = "张三"
+let user_002 = "礼物"
+let stus = {
+  [user_001]: 'my name is ---',
+  [user_002]: 'my age is ==='
+}
+console.log(stus)
+
+// Symbol的缓存
+class Cache {
+  static data: object = {
+    
+  }
+  static set(name: string, value: number) {
+    return (this.data[name] = value)
+  }
+  static get(name: string) {
+    return this.data[name]
+  }
+}
