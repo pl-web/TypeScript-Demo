@@ -22,12 +22,21 @@ console.log(my_info)
 // -----------------
 const prop_sy_1 = 'name'
 const prop_sy_2 = 'age'
+const prop_sy_3 = Symbol('job')
 const my_info_sy = {
   [prop_sy_1]: 'PP',
-  [prop_sy_2]: 20
+  [prop_sy_2]: 20,
+  [prop_sy_3]: 'IT'
 }
 console.log(my_info_sy)
 // 遍历属性名
-for(let key in my_info) {
-  console.log("my_info")
+for(let key in my_info_sy) {
+  console.log("my_info_sy", key) // 获取不到Symbol的属性名
 }
+// Object.getOwnPropertySymbols()
+// Reflect.ownKeys()
+console.log(Object.getOwnPropertySymbols(my_info_sy))
+
+// Symbol
+let arr_1: Array<any> = [1, 2]
+// console.log([].concat(arr_1, [1,2]))
