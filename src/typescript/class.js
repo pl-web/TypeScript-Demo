@@ -24,3 +24,6 @@ class Classmate{
     console.log("我是"+this.name+", 我要回答问题")
   }
 }
+
+const c1 = new Classmate('ll', 23)
+console.log("c1: ", c1)
