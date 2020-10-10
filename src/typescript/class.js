@@ -33,3 +33,25 @@ console.log(c1.hasOwnProperty('answerQuestion')); // false
 console.log(c1.__proto__.hasOwnProperty('answerQuestion')); // true
 
 // --------------------------------------------------------------------
+// set & get  tow keywords
+let userInfo = {
+  _name: 'ppll',
+  _age: 12,
+  set name (newVal) {
+    this._name = newVal;
+  },
+  get name () {
+    console.log(this._name);
+  },
+  set age (newVal) {
+    this._age = newVal;
+  },
+  get age () {
+    console.log(this._age);
+  }
+}
+// 调用
+// console.log(userInfo._name); // class.js:44 Uncaught ReferenceError: _name is not defined
+console.log(userInfo.name) //ppll
+userInfo.name = 'pp'
+console.log(userInfo.name) // pp
