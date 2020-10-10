@@ -27,3 +27,9 @@ class Classmate{
 
 const c1 = new Classmate('ll', 23)
 console.log("c1: ", c1)
+console.log(c1 instanceof Classmate) // true
+console.log(c1.hasOwnProperty('name')) // true
+console.log(c1.hasOwnProperty('answerQuestion')); // false
+console.log(c1.__proto__.hasOwnProperty('answerQuestion')); // true
+
+// --------------------------------------------------------------------
