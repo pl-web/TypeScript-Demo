@@ -52,6 +52,27 @@ let userInfo = {
 }
 // 调用
 // console.log(userInfo._name); // class.js:44 Uncaught ReferenceError: _name is not defined
-console.log(userInfo.name) //ppll
-userInfo.name = 'pp'
-console.log(userInfo.name) // pp
+console.log(userInfo.name) //ppll -- get
+userInfo.name = 'pp' // set
+console.log(userInfo.name) // pp -- get
+console.log("userInfo: ", userInfo) // reset
+
+// --------------------------------------------------------------------
+class Express {
+  constructor(id, phone, goods) {
+    this._id = id;
+    this._phone = phone;
+    this._goods = goods;
+  }
+  set phone (newPhone) {
+    this._phone = newPhone;
+  }
+  get expressInfo () {
+    console.log(this)
+  }
+}
+const e = new Express('001', '1234567', 'flower')
+console.log(e)
+console.log(e.expressInfo)
+e.phone = '123456'
+console.log(e.expressInfo);
