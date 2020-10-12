@@ -12,3 +12,15 @@ class Point {
 const p = new Point()
 // console.log(p)
 p.foo()
+
+
+// -------------------------------------------------------
+class PrivateAttr {
+  // #_attr = 123 // future
+}
+
+// -------------------------------------------------------
+function Fuu () {
+  console.log(new.target)
+}
+const fuu = new Fuu()
