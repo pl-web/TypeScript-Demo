@@ -33,3 +33,21 @@ class C extends P {
 const c = new C('i', 'ining', 'solar system', 1)
 console.log(c)
 console.log(c.getSurname())
+console.log(Object.getPrototypeOf(C) === P) // true
+
+// ---------------------------------------------------------
+console.log('--------------------------------')
+// super keyword
+// ① super as function
+// ② super as object
+class SuperOne {
+  constructor() {
+    this.class_name = 'SuperOne'
+  }
+  getClassName() {
+    console.log(this.class_name)
+  }
+}
+class SuperSecond extends SuperOne {
+
+}
