@@ -49,5 +49,8 @@ class SuperOne {
   }
 }
 class SuperSecond extends SuperOne {
-
+  constructor(surname, name) {
+    super(surname)
+    this.name = name
+  }
 }
