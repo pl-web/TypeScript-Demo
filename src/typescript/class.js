@@ -76,9 +76,11 @@ console.log(e)
 console.log(e.expressInfo)
 e.phone = '123456'
 console.log(e.expressInfo);
+console.log('---------------------------------------')
 
 // ---------------------------------------------------------------------
 const Architecture = class {
+  // position = "(x, y)"
   constructor(a_name, a_age) {
     this.a_name = a_name
     this.a_age = a_age
@@ -89,6 +91,12 @@ const Architecture = class {
   }
 }
 
+const a = new Architecture('ip', 1)
+console.log(a)
+console.log(a.IP) // undefined
+console.log(Architecture)
+
+console.log('---------------------------------------')
 const foo = function() {
 
 }
