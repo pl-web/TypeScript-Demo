@@ -76,3 +76,20 @@ console.log(e)
 console.log(e.expressInfo)
 e.phone = '123456'
 console.log(e.expressInfo);
+
+// ---------------------------------------------------------------------
+const Architecture = class {
+  constructor(a_name, a_age) {
+    this.a_name = a_name
+    this.a_age = a_age
+  }
+  // static function
+  static IP () {
+    console.log("the Imperial Palace")
+  }
+}
+
+const foo = function() {
+
+}
+console.log("foo.name: ", foo.name)
