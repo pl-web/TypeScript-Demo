@@ -3,4 +3,4 @@
 // import './typescript/generics.ts'
 // import './typescript/class.js'
 // import './typescript/class-02.js'
-import './typescript/class-03'
+import './typescript/class-03.js'
