@@ -56,25 +56,42 @@
 // }
 
 // class
-class P {
-  constructor() {
-    this.p_name = 'p_name';
-  }
-  p_print_name() {
-    console.log(this.p_name);
+// class P {
+//   constructor() {
+//     this.p_name = 'p_name';
+//   }
+//   p_print_name() {
+//     console.log(this.p_name);
+//   }
+// }
+// class C extends P {
+//   constructor() {
+//     super();
+//     this.c_name = 'c_name';
+//   }
+//   c_print_name() {
+//     console.log(this.c_name);
+//     console.log('--------------------');
+//     super.p_print_name();
+//   }
+// }
+// const c = new C();
+// c.c_print_name();
+// c.p_print_name();
+
+// // __proto__
+// // prototype
+// let obj = new Object();
+// console.log(obj.__proto__ == Object.prototype); // true
+
+// class __proto__ prototype
+class CustomArray extends Array{
+  constructor(...args) {
+    super(...args);
   }
 }
-class C extends P {
-  constructor() {
-    super();
-    this.c_name = 'c_name';
-  }
-  c_print_name() {
-    console.log(this.c_name);
-    console.log('--------------------');
-    super.p_print_name();
-  }
-}
-const c = new C();
-c.c_print_name();
-c.p_print_name();
+const arr = new CustomArray(5);
+console.log('数组的内容');
+console.log(arr); // 长度为 5 的数组被构造了出来
+arr.fill(1);
+console.log(arr);
